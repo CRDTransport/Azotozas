@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pass</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <h1>POWENIZIS</h1>
+      <span class="badge">Type</span>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="information.html">Information</a>
+    <a href="items.html">Items</a>
+    <a href="pass.html" class="active">Pass</a>
+    <a href="help.html">Help</a>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h2>Enter Access Code</h2>
+      <input type="password" id="accessCode" placeholder="Enter code...">
+      <button onclick="checkCode()">Enter</button>
+      <p id="error" style="color:red; display:none; margin-top:10px;">❌ Code không đúng</p>
+    </div>
+
+    <!-- Thông tin giả lập, ban đầu ẩn -->
+    <div id="hiddenInfo" class="card" style="margin-top:20px; display:none;">
+      <h3>Gibnoniz</h3>
+      <ul>
+        
+        <li>Ankara trước đây gọi là Ancyra hoặc Angora, thủ đô Thổ Nhĩ Kỳ và là thành phố lớn thứ hai của quốc gia này sau Istanbul. Là thủ đô hành chính từ thập niên 1920, Ankara đã có vai trò là trung tâm hành chính, nơi ở của các chính khách, viên chức hành chính và công chức Thổ Nhĩ Kỳ.</li>
+        
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Items</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+  <header><div class="brand"><h1>Items</h1></div></header>
+  <nav>
+       <a href="index.html">Home</a>
+    <a href="information.html">Information</a>
+    <a href="items.html">Items</a>
+    <a href="pass.html" class="active">Pass</a>
+    <a href="help.html">Help</a>
+  </nav>
+
+  <div class="container">
+    <h2>Danh sách</h2>
+    <div class="grid grid-3">
+      <div class="card item">
+        <h4>貓頭鷹</h4>
+        <p class="price">$31000</p>
+        <button onclick="buyItem('貓頭鷹', 31000)">Buy</button>
+      </div>
+      <div class="card item">
+        <h4>白熊</h4>
+        <p class="price">$28000</p>
+        <button onclick="buyItem('白熊', 28000)">Buy</button>
+      </div>
+      <div class="card item">
+        <h4>धोकादायक पातळी</h4>
+        <p class="price">$39000</p>
+        <button onclick="buyItem('धोकादायक पातळी', 39000)">Buy</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="qrPopup" class="popup">
+    <div class="popup-content">
+      <span class="close" onclick="closePopup()">&times;</span>
+      <h3>Quét QR để thanh toán</h3>
+      <div id="qrcode"></div>
+    </div>
+  </div>
+</body>
+</html>
